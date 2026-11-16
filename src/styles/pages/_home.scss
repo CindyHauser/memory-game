@@ -1,0 +1,9 @@
+@use '../abstract/mixins' as mx;
+@use '../abstract/variables' as var;
+
+.content-wrapper-home {
+    @include mx.content-wrapper;
+    @include mx.flex-center;
+    background-color: var.$dark-green-color;
+    color: white;
+}

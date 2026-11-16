@@ -1,0 +1,12 @@
+@mixin content-wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+@mixin flex-center($direction: column){
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+    justify-content: center;
+}
