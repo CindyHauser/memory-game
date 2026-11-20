@@ -1,0 +1,44 @@
+@use '../abstract/mixins' as mx;
+@use '../abstract/variables' as var;
+
+.home_btn {
+    width: 250px;
+    height: 98px;
+    font-family: 'redrose-bold', sans-serif;
+    background-color: var.$button-yellow;
+    font-size: 2.5rem;
+    @include mx.flex-center($direction: row);
+    gap: 1.25rem;
+    margin-top: 2.5rem;
+    transition: transform 0.2s ease;
+
+    &__controller {
+        width: 44px;
+
+        &--hover {
+            display: none;
+        }
+    }
+
+    &__arrow {
+        width: 33px;
+
+        &--hover {
+            display: none;
+        }
+    }
+
+    &:hover {
+        transform: scale(1.05, 1.03);
+
+        .home_btn__controller,
+        .home_btn__arrow {
+            display: none;
+        }
+
+        .home_btn__controller--hover,
+        .home_btn__arrow--hover {
+            display: block;
+        }
+    }
+}

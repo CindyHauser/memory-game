@@ -1,0 +1,56 @@
+@use '../abstract/mixins' as mx;
+@use '../abstract/variables' as var;
+
+.content-wrapper-settings {
+    @include mx.content-wrapper;
+    background-color: white;
+}
+
+.main_settings {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1.25rem;
+
+    >h1 {
+        grid-column: 1 / -1;
+    }
+}
+
+.settings_preview {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+
+    img {
+        width: 460px;
+        height: 412px;
+    }
+
+    &__footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.625rem;
+    }
+}
+
+.settings_options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+
+    >fieldset {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        border: none;
+
+        >legend {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+    }
+}

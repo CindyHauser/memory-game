@@ -8,13 +8,21 @@
 <body>
 
     <div class="content-wrapper-home">
+
         <section class="home_headline">
             <h2 class="home_headline__small">It's play time.</h2>
             <h1 class="home_headline__big">Ready to play?</h1>
         </section>
-        <button>
 
+        <button class="home_btn" onclick="window.location.href='settings.html'">
+            <img class="home_btn__controller" src="public/assets/start_screen/stadia_controller_straight.png" alt="controller">
+            <img class="home_btn__controller home_btn__controller--hover" src="public/assets/start_screen/stadia_controller_hover.png" alt="controller hover">
+            Play
+            <img class="home_btn__arrow" src="public/assets/start_screen/Arrow_normal.png" alt="arrow right">
+            <img class="home_btn__arrow home_btn__arrow--hover" src="public/assets/start_screen/Arrow_hover.png" alt="arrow right hover">
         </button>
+
+        <img class="controller_background" src="public/assets/start_screen/stadia_controller_background.png" alt="big controller">
     </div>
     
     <script type="module" src="/src/main.ts"></script>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory-Settings</title>
+</head>
+
+<body>
+
+    <div class="content-wrapper-settings">
+
+        <main class="main_settings">
+
+            <h1>Settings</h1>
+
+            <section class="settings_options">
+
+                <fieldset>
+                    <legend>Game themes</legend>
+                    <label>
+                        <input type="radio" name="theme" value="code" checked>
+                        Code vibes theme
+                    </label>
+                    <label>
+                        <input type="radio" name="theme" value="food">
+                        Foods theme
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Choose player</legend>
+                    <label>
+                        <input type="radio" name="player" value="blue">
+                        Blue
+                    </label>
+                    <label>
+                        <input type="radio" name="player" value="orange">
+                        Orange
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Board size</legend>
+                    <label>
+                        <input type="radio" name="boardSize" value="16">
+                        16 cards
+                    </label>
+                    <label>
+                        <input type="radio" name="boardSize" value="24">
+                        24 cards
+                    </label>
+                    <label>
+                        <input type="radio" name="boardSize" value="32">
+                        32 cards
+                    </label>
+                </fieldset>
+
+            </section>
+
+            <section class="settings_preview">
+                <img src="/assets/game_settings/codeVibesTheme.png" alt="Code Vibe Theme Preview">
+                <div class="settings_preview__footer">
+                    <span>Game Theme</span>
+                    <span>Player</span>
+                    <span>Board Size</span>
+                    <button>Start</button>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>

@@ -6,4 +6,27 @@
     @include mx.flex-center;
     background-color: var.$dark-green-color;
     color: white;
+    position: relative;
+}
+
+.controller_background {
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    width: 360px;
+}
+
+.home_headline {
+    margin-bottom: 2.5rem;
+
+    >h2 {
+        font-family: 'almarai', sans-serif;
+        font-size: 3rem;
+        font-weight: 400;
+    }
+
+    >h1 {
+        font-family: 'redrose-bold', sans-serif;
+        font-size: 8.75rem;
+    }
 }
